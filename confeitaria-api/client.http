@@ -1,0 +1,40 @@
+@baseUrl = http://localhost:3333
+
+# @name cadastrar_produto
+POST {{baseUrl}}/register-products
+Content-Type: application/json
+
+{
+  "name": "Bolo de Caqui",
+  "description": "bolo bom",
+  "quantity": "10",
+  "price": "39"
+}
+
+###
+
+# @name buscar_todos_produtos
+GET {{baseUrl}}/products
+Content-Type: application/json
+
+# ###
+
+# # @name buscar_produto_id
+# GET {{baseUrl}}/c4d71cf3-3cea-437b-ae53-cab25b321779
+# Content-Type: application/json
+
+# ###
+
+# # @name atualizar_inventario
+# PATCH {{baseUrl}}/c4d71cf3-3cea-437b-ae53-cab25b321779
+# Content-Type: application/json
+
+# {
+#   "name": "Bolo de Morango",
+#   "quantity": 10
+# }
+
+# ###
+
+# # @name deletar_produto
+# DELETE {{baseUrl}}/c4d71cf3-3cea-437b-ae53-cab25b321779
